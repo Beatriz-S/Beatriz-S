@@ -5,10 +5,13 @@
 </div>
  
  <div align="center">
-  <h2>🔭 Learning Fullstack Web Development</h2>
+  <h2>🔭 Learning Fullstack Web Development</h2> 
 </div>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact)](https://github.com/Beatriz-S/github-readme-stats)
+
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact)](https://github.com/Beatriz-S/github-readme-stats)
+
+
 
 <div align="center">
 <!--
