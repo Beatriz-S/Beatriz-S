@@ -1,8 +1,19 @@
-### Hi there 👋
 
+
+<div align="center">
+  <h1> Hello World <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
+</div>
+ 
+ <div align="center">
+  <h2>🔭 Learning Fullstack Web Development</h2>
+</div>
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact)](https://github.com/Beatriz-S/github-readme-stats)
+
+<div align="center">
 <!--
 **Beatriz-S/Beatriz-S** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+### Hi there 👋
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
