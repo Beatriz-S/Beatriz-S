@@ -5,7 +5,7 @@
 </div>
  
  <div align="center">
-  <h2>🔭 Learning Fullstack Web Development</h2> 
+  <h2>🔭 Learning Full Stack Web Development</h2> 
 </div>
 
 
