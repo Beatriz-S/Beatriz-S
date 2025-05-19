@@ -1,24 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Beatriz santos Portfolio</title>
+    <title>Beatriz Santos Portfolio</title>
     <meta charset="UTF-8" />
+    <link href="https://fonts.cdnfonts.com/css/salina" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="name">Beatriz Santos</h1>
-    <section id="About">
-      <h2>About</h2>
-      <p>Hi! I'm Beatriz and i like learning new things</p>
-    </section>
-    <h2 class="pad">Experience</h2>
-    <ul>
-      <li>Python</li>
-      <li>C++</li>
-      <li>Git</li>
-      <li>CI/CD</li>
-    </ul>
-    <h2>Connect</h2>
-    <a href="https://www.linkedin.com/in/beatriz-a-santos/">LinkedIn </a>
+    <div class="split-container">
+      <!-- Left side -->
+      <div class="left-side">
+        <h1 class="name">Beatriz Santos</h1>
+        
+        <section id="job-list">
+          <h2>Experience</h2>
+          <div class="job-titles">
+            <div class="job-title active" data-job="job1">
+              <span class="job-name">Software Quality Assurance Engineer - Windows on Arm(N1X chips)</span>
+              <span class="date">April 20225 - Present</span>
+            </div>
+            <div class="job-title" data-job="job2">
+              <span class="job-name">Software Quality Assurance Engineer - NVIDIA DRIVE Simulation</span>
+              <span class="date">May 2022 - Present</span>
+            </div>
+            <div class="job-title" data-job="job3">
+              <span class="job-name">Software Quality Assurance - Test Operator</span>
+              <span class="date">Jan 2022 - May 2022/span>
+            </div>
+            <div class="job-title" data-job="job4">
+              <span class="job-name">Software Quality Assurance - DLSS</span>
+              <span class="date">Aug 2021 - Jan 2022</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Git</li>
+            <li>CI/CD</li>
+            <li>Linux</li>
+            <li>Windows</li>
+          </ul>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="project-container">
+            <div class="project-item">
+              <div class="project-header">
+                <h3>Portfolio Website</h3>
+                <span class="date">2025</span>
+              </div>
+              <p>Personal portfolio website built with HTML, CSS, and JavaScript featuring a modern split-layout design.</p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <h3>Flixter</h3>
+                <span class="date">2021/span>
+              </div>
+              <p>Flixter is an app that allows users to browse movies from the <a href="https://themoviedb.docs.apiary.io/#">The Movie Database</a> API. Users can use the application to view a
+                list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API. The details of a
+                movie (ratings using RatingBar, popularity, and synopsis) can be seen in a separate window as well as the trailer for the movie.</p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>Android Studio</span>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="project-header">
+                <h3>Gaming PC Build</h3>
+                <span class="date">2022</span>
+              </div>
+              <p>Assembled a custom Build for testing DriveSim Ready Studio</p>
+              <ul>
+                <li>Successfully assembled a high-end gaming PC tailored for optimal performance for Simready Studio</li>
+                <li>Selected and installed components such as CPU, GPU, RAM, SSD/HDD, cooling system, power supply</li>
+                <li>Configure system settings and optimized hardware for SimReady Studio</li>
+              </ul>
+              <div class="project-tech">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="connect">
+          <h2>Connect</h2>
+          <a href="https://www.linkedin.com/in/beatriz-a-santos/">LinkedIn </a>
+        </section>
+      </div>
+
+      <!-- Right side -->
+      <div class="right-side">
+        <section id="job-descriptions">
+          <div class="job-description active" id="job1">
+            <ul class="job-highlights">
+              <li>performed comprehensive QA testing for Windows on ARM systems powered by custom N1X chipsets, focusing on hardware
+                software and platform stability.</li>
+              <li>Validated functionality of all system I/O ports (USB, HDMI, etc), ensuring compliance with user experience standards</li>
+              <li>Executed wireless connectivity testing for Wi-Fi and Bluetooth across multiple scenarios and stress conditions to ensure
+                consistent performance and reliability</li>
+              <li>Led thermal testing and monitoring efforts, collaborated with hardware team to analyze heat dissipation, throttling behavior,
+                and power profiles under sustained workloads.</li>
+            </ul>
+          </div>
+
+          <div class="job-description" id="job2">
+            <ul class="job-highlights">
+              <li>Collaborated with engineering teams to conduct manual and automated software testing for SimReady Studio in NVIDIA
+                Omniverse</li>
+              <li>Developed and implemented automated testing solutions to improve software testing efficiency.</li>
+              <li>Utilized Python for creating automated tests, participated in test plan development, daily build testing, and regression
+                monitoring. Provided feedback to developers and maintained issue tracking via JIRA and NVbugs.</li>
+              <li>Streamlined testing processes, leading to a significant reduction in testing time and increased software reliability by 60%.</li> 
+            </ul>
+          </div>
+
+          <div class="job-description" id="job3">
+            <ul class="job-highlights">
+              <li>Supported testing of autonomous vehicle software in a Linux environment.</li>
+              <li>Troubleshot execution challenges and ensured through documentation of issues</li>
+              <li>Executed test cases and documented software issues.</li>
+              <li>Improved the accuracy of issue reporting and resolution, contributing to the stability of autonomous vehicle software.</li>
+              <li>Participated in test planning, test case development, and test execution for NVIDIA DRIVE software.</li>
+            </ul>
+          </div>
+
+          <div class="job-description" id="job4">
+            <ul class="job-highlights">
+              <li>Conducted comprehensive validation of gaming titles implementing NVIDIA's Deep Learning Super Sampling (DLSS) technology.</li>
+              <li>Meticulously documented and analyzed application integration challenges, providing detailed technical assessments.</li>
+              <li>Implemented rigorous testing methodologies and delivered in-depth analytical reports on identified issues.</li>
+              <li>Instrumental in optimizing performance and elevating the overall quality of DLSS-integrated applications.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

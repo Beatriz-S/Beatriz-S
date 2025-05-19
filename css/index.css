@@ -1,18 +1,294 @@
+@import url('https://fonts.cdnfonts.com/css/salina');
+
+/* General styles */
 body {
-  color: green;
-  background-color: antiquewhite;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Salina', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.pad {
-  padding-top: 50px;
+.split-container {
+  display: flex;
+  height: 100vh;
 }
 
-h1 {
-  text-align: center;
+/* Left side styles */
+.left-side {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(180, 180, 180, 0.9);
+  overflow-y: auto;
+  border-right: 2px solid #e0e0e0;
+  color: #333333;
+}
+
+/* Right side styles */
+.right-side {
+  flex: 1.5;
+  padding: 40px;
+  background-color: rgba(135, 206, 235, 0.9);
+  overflow-y: auto;
+  color: #333333;
+}
+
+.name {
+  font-family: 'Salina', sans-serif;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 h2 {
-  color: blue;
-  size: 50px;
+  color: #333333;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Job titles styles */
+.job-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.2em;
+  color: rgba(51, 51, 51, 0.8);
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.job-name {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 0.8em;
+  color: rgba(51, 51, 51, 0.7);
+  font-style: italic;
+}
+
+.job-title:hover {
+  color: #333333;
+  transform: translateX(5px);
+}
+
+.job-title.active {
+  color: #333333;
+  transform: translateX(10px);
+}
+
+.job-title::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.job-title.active::before {
+  background-color: #333333;
+}
+
+/* Job descriptions styles */
+.job-description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.job-description.active {
+  display: block;
+  opacity: 1;
+}
+
+.job-highlights {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.job-highlights li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.job-highlights li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333333;
+}
+
+/* Skills section styles */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#skills li {
+  background-color: rgba(51, 51, 51, 0.1);
+  color: #333333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+/* Connect section styles */
+#connect a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 20px;
+}
+
+#connect a:hover {
+  color: #0056b3;
+  transform: translateX(5px);
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+/* Languages section styles */
+.language-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.language-item {
+  font-size: 1.1em;
+  color: #333333;
+  padding: 5px 0;
+}
+
+/* Projects section styles */
+#projects {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-header h3 {
+  margin: 0;
+  color: #333333;
+  font-size: 1.1em;
+}
+
+.project-item {
+  background-color: rgba(51, 51, 51, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateX(5px);
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.project-item p {
+  margin: 0 0 15px 0;
+  color: #333333;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.project-item ul {
+  margin: 0 0 15px 20px;
+  padding: 0;
+  color: #333333;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.project-item li {
+  margin-bottom: 8px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tech span {
+  background-color: rgba(51, 51, 51, 0.08);
+  color: #333333;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+  }
+  
+  .left-side, .right-side {
+    flex: none;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  .left-side {
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  body {
+    height: auto;
+    overflow: auto;
+  }
 }
