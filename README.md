@@ -2,7 +2,7 @@
 
 <div align="center">
   <h1> Hello World <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
-  <a href=https://beatriz-s.github.io/Beatriz-S/">Check out my werbsite</a>
+  <a href=https://beatriz-s.github.io/Beatriz-S/">Check out my werbsite at https://beatriz-s.github.io/Beatriz-S/</a>
 </div>
 
 
@@ -15,6 +15,8 @@
 
 
 <div align="center">
+[Check out my website]([https://yourwebsite.com](https://beatriz-s.github.io/Beatriz-S/))
+
 <!--
 **Beatriz-S/Beatriz-S** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 ### Hi there 👋
