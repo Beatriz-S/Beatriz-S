@@ -2,7 +2,7 @@
 
 <div align="center">
   <h1> Hello World <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
-  <a href="beatriz-s.github.io/Beatriz-S/">Check out my werbsite</a>
+  <a href=https://beatriz-s.github.io/Beatriz-S/">Check out my werbsite</a>
 </div>
 
 
