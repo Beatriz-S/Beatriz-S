@@ -368,3 +368,95 @@ strong {
     background: #336699;
 }
 
+/* Dimmer Switch / Theme Toggle */
+.dimmer-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dimmer-switch__label {
+    font-size: 11px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dimmer-switch__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.dimmer-switch__btn:hover {
+    transform: scale(1.05);
+}
+
+.dimmer-switch__btn[aria-checked="true"] {
+    background-color: #23358f;
+}
+
+.dimmer-switch__btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.dimmer-switch__btn[aria-checked="true"]::after {
+    background-color: #FFD700;
+}
+
+/* Calm Theme Styles */
+body.calm-theme {
+    background-color: #f5f5f0;
+}
+
+body.calm-theme .myspace-header {
+    background: linear-gradient(to bottom, #8BA888 0%, #5A7A5A 100%);
+}
+
+body.calm-theme .box-header {
+    background: linear-gradient(to bottom, #8BA888 0%, #6B8E6B 100%);
+}
+
+body.calm-theme .box-content {
+    background-color: #F0F4F0;
+}
+
+body.calm-theme .url-box .box-content {
+    background-color: #FFF9E6;
+    border: 1px solid #E6D8B0;
+}
+
+body.calm-theme .myspace-footer {
+    background-color: #8BA888;
+}
+
+body.calm-theme a {
+    color: #4A7C59;
+}
+
+body.calm-theme a:hover {
+    color: #2D5A3D;
+}
+
+body.calm-theme .add-comment-btn {
+    background: linear-gradient(to bottom, #A8C5A4 0%, #8BA888 100%);
+    border: 1px solid #6B8E6B;
+}
+
+body.calm-theme .add-comment-btn:hover {
+    background: linear-gradient(to bottom, #8BA888 0%, #6B8E6B 100%);
+}
+

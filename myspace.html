@@ -25,6 +25,18 @@
             </div>
             <div class="user-info">
                 Software QA Engineer | California, USA | <a href="mailto:your.email@example.com">Contact Me</a>
+                <span style="margin-left: 15px;">|</span>
+                <div class="dimmer-switch" style="display: inline-flex; margin-left: 10px;">
+                    <label class="dimmer-switch__label" for="themeSwitch">Calm Mode</label>
+                    <button
+                        id="themeSwitch"
+                        class="dimmer-switch__btn"
+                        type="button"
+                        role="switch"
+                        aria-checked="false"
+                        aria-labelledby="themeSwitchLabel">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -387,6 +399,19 @@
         <p>© 2025 Beatriz Santos. All Rights Reserved. | Nostalgic MySpace-style Resume</p>
         <p style="font-size: 10px; margin-top: 5px;">Software Quality Assurance Engineer | Available for new opportunities</p>
     </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeSwitch = document.getElementById('themeSwitch');
+
+        themeSwitch.addEventListener('click', () => {
+            const isChecked = themeSwitch.getAttribute('aria-checked') === 'true';
+            themeSwitch.setAttribute('aria-checked', !isChecked);
+
+            // Apply theme change
+            document.body.classList.toggle('calm-theme', !isChecked);
+        });
+    </script>
 </body>
 </html>
 
