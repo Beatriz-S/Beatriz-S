@@ -22,8 +22,6 @@ Software Quality Assurance Engineer specializing in Windows on ARM, NVIDIA DRIVE
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://beatriz-s.github.io/Beatriz-S/)
 
 
-<div align="center">
-Check out my website https://beatriz-s.github.io/Beatriz-S/
 
 <!--
 **Beatriz-S/Beatriz-S** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
