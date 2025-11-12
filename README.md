@@ -19,7 +19,7 @@ Software Quality Assurance Engineer specializing in Windows on ARM, NVIDIA DRIVE
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/beatriz-a-santos/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Beatriz-S)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://beatriz-s.github.io/Beatriz-S/)
+[![MySpace Resume](https://img.shields.io/badge/MySpace_Resume-0066CC?style=for-the-badge&logo=google-chrome&logoColor=white)](https://beatriz-s.github.io/Beatriz-S/myspace.html)
 
 
 <!--
