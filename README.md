@@ -7,7 +7,7 @@
 
 
 
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+ [![All Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact&langs_count=20&hide=jupyter%20notebook)](https://github.com/anuraghazra/github-readme-stats)
 
 
 
