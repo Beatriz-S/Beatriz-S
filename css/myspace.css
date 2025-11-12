@@ -1,0 +1,370 @@
+/* MySpace Classic Theme CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.4;
+}
+
+a {
+    color: #0066CC;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FF6600;
+}
+
+/* MySpace Header */
+.myspace-header {
+    background: linear-gradient(to bottom, #6699CC 0%, #003366 100%);
+    color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 2px solid #003366;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.nav-links {
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.user-info {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.user-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+/* Box Styling */
+.profile-box,
+.contact-box,
+.interests-box,
+.details-box,
+.schools-box,
+.url-box,
+.about-box,
+.meet-box,
+.experience-box,
+.projects-box,
+.friends-box,
+.comments-box {
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 15px;
+}
+
+.box-header {
+    background: linear-gradient(to bottom, #6699CC 0%, #336699 100%);
+    color: #ffffff;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 1px solid #336699;
+}
+
+.box-content {
+    padding: 12px;
+    background-color: #E8F1F8;
+}
+
+/* Profile Box */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border: 2px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.profile-links {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+/* Contact Box */
+.contact-table {
+    width: 100%;
+    font-size: 11px;
+}
+
+.contact-table td {
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+}
+
+.contact-table a {
+    text-decoration: none;
+    color: #0066CC;
+}
+
+.contact-table a:hover {
+    text-decoration: underline;
+}
+
+/* Interests Box */
+.interests-box .box-content p {
+    margin: 8px 0;
+}
+
+/* Details Box */
+.details-table {
+    width: 100%;
+    font-size: 11px;
+}
+
+.details-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.details-table td:first-child {
+    width: 40%;
+    vertical-align: top;
+}
+
+/* Right Column Boxes */
+.url-box .box-content {
+    background-color: #FFFFCC;
+    border: 1px solid #FFCC00;
+}
+
+.about-box .box-content,
+.meet-box .box-content,
+.experience-box .box-content,
+.projects-box .box-content {
+    background-color: #ffffff;
+}
+
+.about-box h2,
+.meet-box h2 {
+    color: #FF6600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-box h3,
+.experience-box h3,
+.projects-box h3 {
+    color: #0066CC;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.about-box ul,
+.experience-box ul,
+.projects-box ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.about-box li,
+.experience-box li,
+.projects-box li {
+    margin: 5px 0;
+}
+
+/* Experience & Projects */
+.job-entry,
+.project-entry {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.job-entry:last-child,
+.project-entry:last-child {
+    border-bottom: none;
+}
+
+.date {
+    color: #666666;
+    font-style: italic;
+    font-size: 11px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Friends Box */
+.friend-count,
+.comment-count {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.friend {
+    text-align: center;
+}
+
+.friend img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #CCCCCC;
+    margin-bottom: 5px;
+}
+
+.friend a {
+    font-size: 11px;
+    display: block;
+}
+
+/* Comments Box */
+.add-comment-btn {
+    background: linear-gradient(to bottom, #FF9933 0%, #FF6600 100%);
+    color: #ffffff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid #CC5500;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.add-comment-btn:hover {
+    background: linear-gradient(to bottom, #FF6600 0%, #FF3300 100%);
+}
+
+.no-comments {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-style: italic;
+}
+
+/* Footer */
+.myspace-footer {
+    background-color: #6699CC;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid #336699;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.myspace-footer p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .friends-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav-links {
+        font-size: 10px;
+    }
+}
+
+/* Classic MySpace Touches */
+.box-content p {
+    margin: 8px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Scrollbar styling (for webkit browsers) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E8F1F8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6699CC;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #336699;
+}
+
