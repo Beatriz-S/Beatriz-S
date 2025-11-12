@@ -3,14 +3,23 @@
 <div align="center">
   <h1> Hello World <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"></h1>
 </div>
- 
 
+## 🚀 About Me
+Software Quality Assurance Engineer specializing in Windows on ARM, NVIDIA DRIVE Simulation, and automated testing solutions.
 
+## 💻 Languages Used Across All Repositories
 
- [![All Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact&langs_count=30&include_all_commits=true&count_private=true&hide=jupyter%20notebook)](https://github.com/anuraghazra/github-readme-stats)
+[![All Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact&langs_count=30&include_all_commits=true&count_private=true&hide=jupyter%20notebook&theme=default&card_width=445)](https://github.com/anuraghazra/github-readme-stats)
 
+## 📊 GitHub Stats
 
+![Beatriz's GitHub stats](https://github-readme-stats.vercel.app/api?username=Beatriz-S&show_icons=true&theme=default&include_all_commits=true&count_private=true)
 
+## 🔗 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/beatriz-a-santos/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Beatriz-S)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://beatriz-s.github.io/Beatriz-S/)
 
 
 <div align="center">
