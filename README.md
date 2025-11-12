@@ -9,7 +9,7 @@ Software Quality Assurance Engineer specializing in Windows on ARM, NVIDIA DRIVE
 
 ## 💻 Languages Used Across All Repositories
 
-[![All Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact&langs_count=30&include_all_commits=true&count_private=true&hide=jupyter%20notebook&theme=default&card_width=445)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Beatriz-S&layout=compact&langs_count=20&size_weight=0.5&count_weight=0.5&hide=jupyter%20notebook&card_width=445)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 📊 GitHub Stats
 
