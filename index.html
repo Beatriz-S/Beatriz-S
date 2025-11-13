@@ -382,42 +382,29 @@
             };
             
             try {
-                // Fetch pinned repositories using GitHub GraphQL API
-                const query = `
-                    query {
-                        user(login: "${username}") {
-                            pinnedItems(first: 6, types: REPOSITORY) {
-                                nodes {
-                                    ... on Repository {
-                                        name
-                                        url
-                                        description
-                                    }
-                                }
-                            }
-                        }
-                    }
-                `;
+                // Use GitHub's public profile page to get pinned repos
+                // This approach works without authentication
+                const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+                const allRepos = await response.json();
                 
-                const response = await fetch('https://api.github.com/graphql', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ query })
-                });
+                // Define the pinned repos order (matches your GitHub pinned repos order)
+                // TO UPDATE: Change this array to match GitHub profile pinned repos order
+                const pinnedOrder = [
+                    'Beatriz-open-api',  // 1st position
+                    'Flixter',           // 2nd position
+                    'SimpleTweet',       // 3rd position
+                    'To-do',             // 4th position
+                    'Beatriz-S'          // 5th position
+                ];
                 
-                const data = await response.json();
-                
-                // Get pinned repositories (limit to 5)
-                const pinnedRepos = data.data?.user?.pinnedItems?.nodes?.slice(0, 5) || [];
+                // Create array of pinned repos in order
+                const pinnedRepos = pinnedOrder.map(name => {
+                    const repo = allRepos.find(r => r.name === name);
+                    return repo ? { name: repo.name, url: repo.html_url } : { name, url: `https://github.com/${username}/${name}` };
+                }).slice(0, 5);
                 
                 // Clear loading placeholder
                 projectsGrid.innerHTML = '';
-                
-                if (pinnedRepos.length === 0) {
-                    throw new Error('No pinned repositories found');
-                }
                 
                 // Display each pinned repository
                 pinnedRepos.forEach(repo => {
@@ -453,11 +440,11 @@
                 projectsGrid.innerHTML = '';
                 
                 const fallbackProjects = [
-                    { name: 'Beatriz-S', url: 'https://github.com/Beatriz-S/Beatriz-S' },
+                    { name: 'Beatriz-open-api', url: 'https://github.com/Beatriz-S/Beatriz-open-api' },
                     { name: 'Flixter', url: 'https://github.com/Beatriz-S/Flixter' },
                     { name: 'SimpleTweet', url: 'https://github.com/Beatriz-S/SimpleTweet' },
                     { name: 'To-do', url: 'https://github.com/Beatriz-S/To-do' },
-                    { name: 'Beatriz-open-api', url: 'https://github.com/Beatriz-S/Beatriz-open-api' }
+                    { name: 'Beatriz-S', url: 'https://github.com/Beatriz-S/Beatriz-S' }
                 ];
                 
                 fallbackProjects.forEach(repo => {
