@@ -697,6 +697,7 @@ a:hover {
 /* Certifications Card */
 .cert-item {
     display: flex;
+    align-items: flex-start;
     gap: 16px;
     padding: 16px;
     background: rgba(255, 255, 255, 0.03);
@@ -722,8 +723,9 @@ a:hover {
     font-size: 24px;
     flex-shrink: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 2px;
 }
 
 .cert-badge img {
